@@ -1,1 +1,1 @@
-# A* Sorting Algorithim 
+# A* Pathfinding Algorithim 
