@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function(){ //check the html doc, 
     let row = Math.floor(start_pos / matrix[0].length);
     let column = start_pos % matrix[0].length;
 
-    define_vars(matrix, [column, row]); 
+    a_star(matrix, [column, row]); 
 
 
 }); //func 
@@ -85,7 +85,7 @@ function find_surrounding(matrix, grid_pos) { //returns the surrounding position
     return surrounding_positions; 
 }
 
-function define_vars(matrix, grid_pos){
+function a_star(matrix, grid_pos){
     
     let openSet = []; //array containing unevaluated grid points
     let closedSet = []; //completly done points 
@@ -102,9 +102,18 @@ function define_vars(matrix, grid_pos){
     this.parent = undefined; //parent of node, defualt is undefined 
 
     openSet.push([this.x, this.y]); //give first 
-}
 
+    // while (openSet.length > 0){ 
 
+    //     current_node = openSet[0]; //get the current node 
+    //     current_index = 0; 
+        
+    //     for(const [index, item] of openSet.entries()) {
 
-
-
+    //         if(item.f < current_node.f){ 
+    //             current_node = item; 
+    //             current_index = index;    
+    //         }
+    //     }
+    // }
+} 
