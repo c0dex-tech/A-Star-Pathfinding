@@ -102,10 +102,9 @@ function define_vars(matrix, grid_pos){
     this.parent = undefined; //parent of node, defualt is undefined 
 
     openSet.push([this.x, this.y]); //give first 
-
-
-
 }
+
+
 
 
 
